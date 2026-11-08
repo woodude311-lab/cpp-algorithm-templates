@@ -1,6 +1,6 @@
 const int N = 1e7 + 10;
 bool isPrime[N];
-vector<int> primes;
+vector <int> primes;
 void init()
 {
     fill(isPrime, isPrime + N + 1, true);
