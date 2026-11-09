@@ -1,5 +1,5 @@
 const int N = 1e7 + 10;
-bool isPrime[N];
+bool isPrime[N+1];
 vector <int> primes;
 void init()
 {
