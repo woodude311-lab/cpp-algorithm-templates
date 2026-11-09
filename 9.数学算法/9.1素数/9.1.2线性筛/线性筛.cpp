@@ -3,7 +3,7 @@ bool isPrime[N];
 vector <int> primes;
 void init()
 {
-    fill(isPrime, isPrime + N + 1, true);
+    fill(isPrime,isPrime + N + 1,true);
     isPrime[0] = isPrime[1] = false;
     for(int i = 2;i <= N;++i)
     {
