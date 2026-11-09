@@ -1,5 +1,5 @@
 const int N = 1e7 + 10;
-bool isPrime[N];   // isPrime[i] = true 表示 i 是素数
+bool isPrime[N+1];   // isPrime[i] = true 表示 i 是素数
 void init()
 {
     fill(isPrime,isPrime + N + 1,true);
