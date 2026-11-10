@@ -35,7 +35,7 @@ int main()
     // ----------同值连通块缩点----------
     auto shrink = [&]() -> ShrinkResult
     {
-        vector<int> bid(n, -1);
+        vector<int> bid(n,-1);
         vector<int> bvalue;
         vector<int> bsize;
         int bcnt = 0;
