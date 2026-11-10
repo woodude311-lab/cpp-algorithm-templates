@@ -7,10 +7,10 @@ using namespace std;
 struct ShrinkResult
 {
     int bcnt;                  // 块的数量
-    vector<int> bid;           // 原节点所属块的编号
-    vector<int> bvalue;        // 每个块的值
-    vector<int> bsize;         // 每个块包含的原节点数量
-    vector<vector<int>> graph; // 缩点后的图
+    vector <int> bid;           // 原节点所属块的编号
+    vector <int> bvalue;        // 每个块的值
+    vector <int> bsize;         // 每个块包含的原节点数量
+    vector <vector <int>> graph; // 缩点后的图
 };
 int main()
 {
@@ -35,9 +35,9 @@ int main()
     // ----------同值连通块缩点----------
     auto shrink = [&]() -> ShrinkResult
     {
-        vector<int> bid(n,-1);
-        vector<int> bvalue;
-        vector<int> bsize;
+        vector <int> bid(n,-1);
+        vector <int> bvalue;
+        vector <int> bsize;
         int bcnt = 0;
         // 1. BFS 找出所有同值连通块
         for(int start = 0;start < n;start++)
