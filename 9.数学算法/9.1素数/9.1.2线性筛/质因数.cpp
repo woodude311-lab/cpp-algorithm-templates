@@ -1,10 +1,10 @@
 const int N = 1e7 + 10;
 int minp[N];
 vector<int> primes;
-void init(int n)
+void init()
 {
     minp[1] = 1;
-    for(int i = 2;i <= n;++i)
+    for(int i = 2;i <= N;++i)
     {
         if(!minp[i])
         {
@@ -13,7 +13,7 @@ void init(int n)
         }
         for(int p : primes)
         {
-            if(1LL * i * p > n) break;
+            if(1LL * i * p > N) break;
             minp[i * p] = p;
             if(p == minp[i]) break;
         }
